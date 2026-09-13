@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { HeaderBanner } from './components/HeaderBanner';
-import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CalculatorShell, CalculatorTab } from './components/CalculatorShell';
 import { HowItWorksModal } from './components/HowItWorks';
@@ -45,14 +44,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-between bg-[#0c0d0e] text-neutral-100 font-sans transition-colors duration-200">
-      {/* Top Navigation */}
-      <Navbar
-        activeTab={activeTab}
-        onSelectTab={setActiveTab}
-        onOpenHowItWorks={() => setIsHowItWorksOpen(true)}
-      />
-
-      {/* Bold Feature Banner below top bar */}
+      {/* Feature Banner at top */}
       <HeaderBanner onOpenOcr={handleOpenOcr} />
 
       {/* Main Content */}
