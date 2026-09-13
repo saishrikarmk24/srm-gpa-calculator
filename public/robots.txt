@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://srm-gpa-calculator.vercel.app/sitemap.xml
